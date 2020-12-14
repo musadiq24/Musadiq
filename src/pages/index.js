@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Icon, Text, Strong, Box, List, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Icon, Text, Strong, Box, List, Button, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Menu, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
-import { MdAccountBalance, MdArrowDownward, MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
+import { MdAccountBalance, MdArrowDownward, MdLocationOn, MdEmail, MdPhone, MdFace } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
@@ -112,7 +112,9 @@ export default (() => {
 				color="--grey"
 				margin="0px"
 			>
-				Webtry Manual
+				<Strong>
+					Webtry Manual
+				</Strong>
 			</Text>
 			<Text
 				as="h1"
@@ -129,32 +131,44 @@ export default (() => {
 			<Stack margin-top="auto" color="--grey" font="--base">
 				<StackItem width="50%" md-width="100%">
 					<Text margin="0px">
-						All this section contains of the winners of Telegram Art Session
-						<br />
-						WBSN-Code :{"\n"}
-						<br />
-						Art-S-00.001/14/2020
-						<br />
-						Their Good Names are:
+						<Strong
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
+							All this section contains of the winners of Telegram Art Session
+							<br />
+							WMCV-Code :{"\n"}
+							<br />
+							Art-S-00.001/14/2020
+							<br />
+							Their Good Names are:
+						</Strong>
 					</Text>
 				</StackItem>
 				<StackItem width="50%" md-width="100%" />
 			</Stack>
 			<List>
 				<Text>
-					First item
+					JUVARIA LATIEF BHAT
 				</Text>
 			</List>
 			<List>
 				<Text>
-					First item
+					ALEENA ISFAQ QURAISHI
 				</Text>
 			</List>
 			<List>
 				<Text>
-					First item
+					ARSH BINTI KHURSHEED
 				</Text>
 			</List>
+			<Button>
+				View Their Art Pieces
+			</Button>
 		</Section>
 		<Section
 			padding="60px 0"
@@ -376,6 +390,7 @@ export default (() => {
 				</Strong>
 			</Button>
 		</Section>
+		<Icon category="md" icon={MdFace} />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
